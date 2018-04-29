@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+.ml--70{margin-left: 68px;}
+footer{background-color: #fff;}
+.wrapper-main{
+    background: #fefefe no-repeat top left;
+    min-height:750px;
+    width: 773px;
+    padding: 0px 5px 10px 5px;
+    border:#ccc solid 3px;
+    border-radius:5px;
+    margin-bottom:20px;
+    margin-left:70px;
+
+}
+
+.wrapper-main-middle{
+    background: url(../images/backmoz.jpg) top left;
+    height:1570px;
+    width: 1000px;
+    padding: 60px 55px 0 55px;
+    border:#ccc solid 3px;
+    margin-left:130px;
+    border:solid lightergrey 2px;
+}
+.wrapper-main-longer{
+    background: url(../images/backmoz.jpg) no-repeat top left;
+    height: 1256px;
+    width: 1000px;
+    padding: 60px 55px 0 55px;
+}
+
+.wraper-info{
+    background: url(../images/modern-mosaic-tile.jpg) repeat top left;
+    min-height:1000px;
+    width: 1000px;
+    padding: 0px 55px 0 55px;
+}
+.wraper-clear{
+    background: #fefefe no-repeat top left;
+    min-height:800px;
+    width: 751px;
+    padding: 0px 5px 10px 5px;
+    border:#ccc solid 3px;
+    border-radius:5px;
+    margin-bottom:20px;
+    margin-left:70px;
+}
+.wraper-clearer{
+    background: #fefefe no-repeat top left;
+    min-height: 660px;
+    width: 65%;
+    padding: 10px 2px 10px 5px;
+    border:#ccc solid 3px;
+    border-radius:5px;
+    text-align:left;
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 7px;
+}
+
+.margin-left{margin-left:30px;}
+.margin-top-smoll{margin-top:20px;display:inline;}
+.margin-top-smoller{margin-top:10px;}
+.margin-top-big{margin-top:100px;}
+.margin-top-middle{margin-top:40px;}
+.nopadding {padding: 0 !important;}
+.nomargin {margin: 0 !important;}
+.nomargin-bottom {margin-bottom: 0 !important;}
+
+#above-baner{
+    height: 266px;
+    text-align:center;
+    padding:0px;
+    margin:0px;
+}
+#above-baner > ul{
+    padding:0px;
+    margin:0px;
+    width:100%;
+    height: 100%;
+    display: block;
+}
+#above-baner-clean{
+    width:780px;
+    height: 266px;
+    margin-top:-10px;
+}
+.lower_banner {
+    background: url(../images/lower_banner.png) no-repeat left top;
+    height: 107px;
+    width: 766px;
+}
+.info{
+    margin-top: 22px;
+    margin-left:140px;
+    color:#fff;
+}
+.info .info-text{font-size: 22px;}
+.info .info-phone{font-size: 28px;}
+a.button{
+    background: url(../images/lower_btn.png) no-repeat left top;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    height: 42px;
+    line-height: 28px;
+    padding-left: 15px;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 42px;
+    width: 182px;
+
+}
+ol{margin-bottom:0 !important;}
+
+.text-color-black{color:#000;}
+.hed-custom{font-size: 16px;font-weight:bold;color:#000099;text-align:center;margin-top:10px !important;}
+.address-info{text-align:center;color:#000099;}
+hr.hr-info{border-color: #000 -moz-use-text-color -moz-use-text-color !important;}
+.dl-info dt{text-align: left !important; width:35%;}
+.dl-info dd{text-align: left !important; width:65%;}
+h1.h1-venue{font-size: 24px;color:#0070C0;}
+h2.h2-venue{font-size: 22px;color:#0070C0;}
+.nav-bar-wrapper{padding:0px; margin:0px;text-align:left;width: 22%;}
+li.cust-active{
+    margin-bottom:20px;
+    width: 100%;
+    display: block !important;
+    top: 0px;
+    left: 0px;
+    height:65px;
+    float:left;
+}
+li.cust-active a{
+    color:#000;
+    background-color: #4F81BD!important;
+    border: 1px solid RGB(63,72,204);
+    border-radius:5px;
+    margin: 0px !important;
+    height: 65px;
+    width: 100% !important;
+    font-size: 24px !important;
+    position: relative;
+    left:0px;
+    top:0px;
+    float: left;
+}
+li.cust-active:hover a{
+    background-color: #0066FF !important;
+}
+li.cust-active:hover{
+    background-color: #0066FF !important;
+}
+li.cust-notactive{
+    margin-bottom:20px;
+    width: 100%;
+    display: block !important;
+    top: 0px;
+    left: 0px;
+    height:65px;
+    float:left;
+}
+li.cust-notactive a{
+    color:#000;
+    background-color: #a6a6a6 !important;
+    border: 1px solid RGB(63,72,204);
+    border-radius:5px;
+    margin: 0px !important;
+    height: 65px;
+    width: 100% !important;
+    font-size: 24px !important;
+    position: relative;
+    left:0px;
+    top:0px;
+    float: left;
+}
+li.cust-notactive:hover a{
+    background-color: #ccc !important;
+}
+li.cust-notactive:hover{
+    background-color: #ccc !important;
+}
+
+li.margin-right{margin:0px 21px 0 0px;}
+.nav-pills > li.notactive > a {
+    color: #337ab7;
+    background-color: #e6e6e6;
+    display:block;
+    border: #foo solid 1px;
+}
+.nav-pills > li.notactive:hover > a {background-color: #ccc;}
+.nav-pills > li.active:hover > a {background-color: #66CCFF;}
+.nav-pills > li > a{margin-bottom: 10px;}
+/*#float-items{margin-left:20px;}*/
+.requare{color:#f00;}
+.text-furniture-bold{
+    color:#0070C0;
+    font-weight: bold;
+}
+.text-indent{text-indent: 50px;}
+.text-indent_smoll{text-indent: 15px;}
+.error-notif{display:none;}
+.requare_opt{display:none;}
+.sponsor-margin{margin-left:20%!important;}
+a.nav-footer{
+    font-weight: bold !important;
+    font-size: 16px !important;
+    display: inline-block !important;
+}
+.table-custom{background-color: #fff; }
+.credit-card{display:none;}
+.spetial-notif{
+    font-weight:bold;
+    color:#1f497d;
+}
+.dl-custom dt{
+    text-align: left !important;
+    width:90px !important;
+}
+.dl-custom dd{
+    margin-left: 90px  !important;
+}
+address{font-weight: bold;}
+address + h2{margin-top:2px;}
+.carousel-inner > ul li.item {
+    opacity: 0;
+    /*top: 0;
+    left: 0;*/
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    -webkit-transition: opacity 5s ease;
+    -o-transition: opacity 5s ease;
+    transition: opacity 5s ease;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+.carousel-fade .carousel-inner ul li.item {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 4s;
+    transition-timing-function:linear;
+}
+
+.carousel-fade .carousel-inner ul li.active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.img-responsive{
+    height:100px;
+    width:250px;
+    padding:4px 2px;
+    border:2px solid brown;
+}
+img.baner-view{
+    display: block;
+    border-radius:10px;
+    margin:auto auto auto auto;
+}
+.hide{display:none;}

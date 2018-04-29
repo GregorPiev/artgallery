@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArtGallery-Contact Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="javascript/appl.js"></script>
+        <script src="javascript/controllers.js"></script>
+        <script src="javascript/service.js"></script>
+
+        <meta name="author" content="Art Gallery, Art, Gallery" />
+        <meta name="rating" content="general" />
+        <meta name="Description" content="Art Gallery, Art, Gallery" />
+        <meta name="Keywords" content="Art Gallery, Art, Gallery" />
+
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+        <script type="text/javascript">
+            function show_error(modul) {
+                $('#loading').hide();
+                $("#" + modul + "_error").show('fast');
+                $("#" + modul + "_error").focus();
+            }
+            function post_message(msg) {
+                $('#loading').hide();
+                alert(msg);
+                document.getElementById("abstract_forms").reset();
+            }
+        </script>
+    </head>
+    <body>
+        <iframe style="width: 800px;height:500px;border-width:0px;display:none;" src="php/abstract_form.php" name="control"></iframe>
+        <div class="container wraper-clear">
+            <div class="row">
+                <div id="above-baner-clean" class="col-lg-12">
+                    <div id="#myCarousel" class="row margin-top-middle carousel-fade col-lg-12" data-ride="carousel" >
+
+                        <div id="above-baner" class="col-lg-8 col-lg-offset-1 carousel-inner">
+                            <ul>
+                                <li class="item item-1 slide-image  active">
+                                    <img class="baner-view" src="images/41a.jpg" data-speed="1" alt="" title="" >
+                                </li>
+                                <li class="item item-2 slide-image">
+                                    <img class="baner-view" src="images/15a.jpg" data-speed="1" alt="" title="" >
+                                </li>
+                                <li class="item item-3 slide-image">
+                                    <img class="baner-view" src="images/19a.jpg" data-speed="1" alt="" title="" >
+                                </li>
+                                <li class="item item-4 slide-image">
+                                    <img class="baner-view" src="images/9a.jpg" data-speed="1" alt="" title="" >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="row margin-top-smoll">
+                <article class="col-lg-10  col-lg-offset-1">
+                    <h1 class="h1-venue">Abstract submission form</h1>
+                    <hr class="hr-info nomargin nopadding">
+                </article>
+            </section>
+
+            <div class="row margin-top-smoller">
+                <div class="col-lg-10  col-lg-offset-1">
+                    <input type="hidden" name="start_send" value="1">
+                    <form id="abstract_forms" class="form-horizontal" role="form" action="php/abstract_form.php" method="post" enctype="multipart/form-data" target="control">
+                        <input type="hidden" name="start_send" value="1">
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-4" for="lname">First Name  <span class="requare">*</span>:</label>
+                            <div  class="col-lg-6">
+                                <input type="text" name="fname" class="form-control" value="" placeholder="First Name">
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="fname_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#fname_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-4" for="lname">Last Name <span class="requare">*</span>:</label>
+                            <div  class="col-lg-6">
+                                <input type="text" name="lname" class="form-control" value="" placeholder="Last Name">
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="lname_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#lname_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-4" for="affiliation">Institutional affiliation / Professional Affiliations <span class="requare">*</span>:</label>
+                            <div  class="col-lg-6">
+                                <input type="text" name="affiliation" class="form-control" value="" placeholder="Institutional affiliation">
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="affiliation_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#affiliation_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-4" for="lname">Phone number <span class="requare">*</span>:</label>
+                            <div  class="col-lg-6">
+                                <input type="text" name="phone_number" class="form-control" value="" placeholder="Phone number">
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="phone_number_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#phone_number_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-4" for="email">Email <span class="requare">*</span>:</label>
+                            <div  class="col-lg-6">
+                                <input type="text" name="email" class="form-control" value="" placeholder="Email">
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="email_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#email_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <div  class="col-lg-4 text-furniture-bold">I would like to present:</div>
+                            <div  class="col-lg-2">
+                                <input type="radio" name="presentation" value="None presentation" checked="checked" onclick="$('.requare_opt').hide();">&nbsp;None presentation
+                            </div>
+                            <div  class="col-lg-3">
+                                <input type="radio" name="presentation" value="Poster presentation" onclick="$('.requare_opt').show();">&nbsp;Poster presentation
+                            </div>
+                            <div  class="col-lg-3">
+                                <input type="radio" name="presentation" value="Oral presentation" onclick="$('.requare_opt').show();">&nbsp;Oral presentation
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-4" for="abstract_target">I would like to submit an abstract for <span class="requare requare_opt">*</span>:</label>
+                            <div  class="col-lg-8">
+                                <input type="text" name="abstract_target" class="form-control" value="" placeholder="">
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="abstract_target_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#abstract_target_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group col-lg-12">
+                            <div  class="col-lg-12 requare">Abstract Details Part B</div>
+                            <label class="control-label col-lg-4" for="abstract_title">Abstract Title <span class="requare requare_opt">*</span>:</label>
+                            <div  class="col-lg-8">
+                                <input type="text" name="abstract_title" class="form-control" value="" placeholder="Abstract Title">
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="abstract_title_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#abstract_title_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-4" for="author">Author/s <span class="requare requare_opt">*</span>:</label>
+                            <div  class="col-lg-12">Fill Last name + the first letter of first name. Example: Gelman F. (1), Halicz L. (1) Major T. D.</div>
+                            <div  class="col-lg-8 col-lg-offset-4">
+                                <input type="text" name="author" class="form-control" value="" placeholder="Author/s">
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="author_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#author_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-12" for="affiliations" style="text-align:left;">Institutional affiliations / Professional Affiliations <span class="requare">*</span>:</label>
+                            <div  class="col-lg-12">Type Institutional affiliation / Professional Affiliations address (City, Country) Example: 1. Geological Survey of Israel, 30 Malkhe St. Jerusalem 95501 Israel)</div>
+                            <div  class="col-lg-8 col-lg-offset-4">
+                                <input type="text" name="affiliations2" class="form-control" value="" placeholder="">
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="affiliations2_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#affiliations2_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-12" for="abstract_body" style="text-align:left;">Abstract Body <span class="requare requare_opt">*</span>:</label>
+                            <div  class="col-lg-12">450 words Maximum</div>
+                            <div  class="col-lg-12">
+                                <textarea class="form-control" name="abstract_body" cols="3"></textarea>
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-4">
+                                <div id="abstract_body_error" class="alert alert-danger margin-top-smoller error-notif">
+                                    <a href="javascript:void();" class="close" onclick="$('#abstract_body_error').hide();">&times;</a>
+                                    <strong>Warning!</strong> Select value is duty
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-12" for="images_abstracted" style="text-align:left;">IUpload Chart / Images Abstract</label>
+                            <div  class="col-lg-12">It is not possible to upload Chart / Images Abstract via "Google Form" If it is necessary – attach images file (only jpg. format -2 files maximum) and submit by email to: crouvi@gsi.gov.il
+                                To associate between images and abstract please use the same title by the mail Subject.
+                            </div>
+                            <div  class="col-lg-8">
+                                <input type="file" name="images_abstracted" id="images_abstracted">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <label class="control-label col-lg-12" for="editor_comments" style="text-align:left;">Comments for the editor</label>
+                            <div  class="col-lg-12">450 words Maximum</div>
+                            <div  class="col-lg-12">
+                                <textarea class="form-control" name="editor_comments" cols="3"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-lg-12 text-right">
+                            <img id="loading" src="images/loading.gif" alt="" style="display:none;">
+                            <input type="submit" value="Send" class="btn btn-primary" onclick="$('#loading').show();
+                                    return true;">
+
+                        </div>
+
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+
+
+            <section class="row margin-top-smoll">
+                <article class="col-lg-10 col-lg-offset-1">
+                    <ul class="nav nav-pills">
+                        <li class="notactive"><a class="nav-footer" href="/">Home</a></li>
+                        <li class="notactive"><a class="nav-footer" href="/mystory">General Information</a></li>
+                        <li class="notactive"><a class="nav-footer" href="/myworks">Purchase</a></li>
+                        <li class="notactive"><a class="nav-footer" href="/Israeli-participant">Israeli participant</a></li>
+                        <li class="active"><a class="nav-footer" href="/Purchase">Abstract form</a></li>
+                        <li class="notactive"><a class="nav-footer" href="/Conference_program">The conference program</a></li>
+                        <li class="notactive"><a class="nav-footer" href="/contactus">Contact Us</a></li>
+                    </ul>
+
+                </article>
+            </section>
+
+            <section class="row margin-top-smoller">
+                <article class="col-lg-10  col-lg-offset-2">
+                    <p class="spetial-notif">For any type of registration or change <span style='color:#900;'></span>other than full-booking</span> please contact</p>
+
+                    <p class="spetial-notif">Galit - <a href="mailto:seminar@aviation-links.co.il" target="_blank">seminar@aviation-links.co.il</a></p>
+                    <ul style="margin-left:20px;">
+                        <li>She will contact you as soon as possible and make the booking for you personally.</li>
+                        <li>Please do not hesitate to contact us if you have any queries.</li>
+                    </ul>
+                </article>
+
+            </section>
+
+        </div>
+    </body>
+</html>

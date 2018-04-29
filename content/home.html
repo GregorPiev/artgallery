@@ -1,0 +1,51 @@
+<section>
+    <ul class="breadcrumb"><li><a href="../project1/#/" class="active">Home</a></li></ul>
+    <h1 class="page-header">Home</h1>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+
+            <div id="marquee">
+                <ul>
+                    <li style="margin: 0px; padding: 0px; height: 86px;">&nbsp;</li>
+
+                    <li class="repated" style="margin: 0px; padding: 0px; height: 86px;" ng-repeat="nitem in newscollection">Repeater:{{nitem.item}}</li>
+                    <li style="margin: 0px; padding: 0px; height: 86px;">&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+        <div class = "col-lg-9 col-md-9 col-sm-9 col-xs-12" >
+            <div id = "wrapper-home" >
+                <ng-repeat  ng-repeat="msg in messages">
+                    <h2 class="page-header" ng-bind="msg.topic"></h2>
+                    <span  ng-bind-html="msg.message"></span>
+                </ng-repeat>
+
+                <div class = "clearfix" > </div>
+                <h2 class="page-header">Selected works</h2>
+                <ng-repeat ng-repeat="img in gallery">
+                    <div class="col-lg-3  col-md-3 col-sm-3 col-xs-12 portfolio-item">
+                        <div class="wrapper_img">
+                            <img class="img-responsive" ng-src="../project1/{{img.img}}" alt="{{img.alt}}">
+                        </div>
+                        <h4 class="page-header">{{img.alt}}</h4>
+                    </div>
+                </ng-repeat>
+                <div class = "clearfix" > </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(function () {
+        $('#marquee').vTicker({
+            speed: 700,
+            pause: 3000,
+            showItems: 7,
+            mousePause: true,
+            height: 0,
+            animate: true,
+            margin: 0,
+            padding: 0,
+            startPaused: false});
+    });
+</script>

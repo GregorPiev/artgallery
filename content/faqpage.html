@@ -1,0 +1,22 @@
+<section>
+    <ul class="breadcrumb"><li><a href="../project1/#/">Home</a></li><li><a href="/#/faqpage" class="active">F.A.Q.</a></li></ul>
+    <h1 class="page-header">F.A.Q.</h1>
+
+
+    <div class="panel-group" id="accordion">
+
+        <div class="panel panel-default" ng-repeat="item in collection">
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle='collapse' data-parent='#accordion' data-target="#collapse{{item.id}}" ng-bind="item.topic"></a>
+                </h4>
+            </div>
+            <div id="collapse{{item.id}}" class="panel-collapse collapse {{item.status}}">
+                <div class="panel-body" ng-bind-html="item.content"></div>
+            </div>
+            <div class="clearfix">&nbsp;</div>
+
+        </div>
+
+    </div>

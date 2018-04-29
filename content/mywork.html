@@ -1,0 +1,24 @@
+<section>
+    <ul class="breadcrumb"><li><a href="../project1/#/">Home</a></li><li><a href="../project1/#/mywork" class="active">{{topic}}</a></li></ul>
+    <h1 class="page-header" ng-bind="topic"></h1>
+    <div class="row">
+        <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+            <span class="page-text" ng-bind-html="content"></span>
+            <img class="page-pict img-responsive" ng-src="../project1{{picture}}" alt="">
+            <div class = "clearfix" > </div>
+
+            <span class="glyphicon glyphicon-search search-icon "></span>
+            <input class="search  " ng-model="criteria" placeholder="Search">
+            <div class = "clearfix" > </div>
+            <hr>
+            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-12 portfolio-item" ng-repeat="work in works|filter: criteria">
+                <div class="wrapper_img">
+                    <img class=" img-responsive" ng-src="../project1{{work.src}}" alt="{{work.name}}">
+                </div>
+                <h4 class="page-header" ng-bind="work.name"></h4>
+                <span ng-bind-html="work.msg"></span>
+            </div>
+
+        </div>
+    </div>
+</section>

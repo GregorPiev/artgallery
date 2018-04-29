@@ -1,0 +1,154 @@
+{
+    "topic": "Artisans",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus  PageMaker including versions of Lorem Ipsum.",
+    "picture": {
+        "src": "../project1/images/coll/29.jpg",
+        "topic": "Artisan"
+    },
+    "artisans": [
+        {
+            "artisanId": 1,
+            "fullname": "Albert Dambelldor",
+            "data": "12/06/2015",
+            "quintity": 1
+        },
+        {
+            "artisanId": 2,
+            "fullname": "Boaz Dambelldor",
+            "data": "13/06/2015",
+            "quintity": 12
+        },
+        {
+            "artisanId": 3,
+            "fullname": "Ariel Dambelldor",
+            "data": "14/06/2015",
+            "quintity": 9
+        },
+        {
+            "artisanId": 4,
+            "fullname": "Boris Dambelldor",
+            "data": "15/06/2015",
+            "quintity": 7
+        },
+        {
+            "artisanId": 5,
+            "fullname": "Baruh Dambelldor",
+            "data": "16/06/2015",
+            "quintity": 8
+        },
+        {
+            "artisanId": 6,
+            "fullname": "Lior Dambelldor",
+            "data": "17/06/2015",
+            "quintity": 3
+        },
+        {
+            "artisanId": 7,
+            "fullname": "Noam Dambelldor",
+            "data": "18/06/2015",
+            "quintity": 2
+        },
+        {
+            "artisanId": 8,
+            "fullname": "Haim Dambelldor",
+            "data": "19/06/2015",
+            "quintity": 21
+        },
+        {
+            "artisanId": 9,
+            "fullname": "Gregory Dambelldor",
+            "data": "20/06/2015",
+            "quintity": 5
+        },
+        {
+            "artisanId": 10,
+            "fullname": "Sergey Dambelldor",
+            "data": "22/06/2015",
+            "quintity": 9
+        },
+        {
+            "artisanId": 11,
+            "fullname": "Idan Dambelldor",
+            "data": "21/06/2015",
+            "quintity": 8
+        },
+        {
+            "artisanId": 12,
+            "fullname": "Shahar Dambelldor",
+            "data": "23/06/2015",
+            "quintity": 13
+        },
+        {
+            "artisanId": 13,
+            "fullname": "Eli Dambelldor",
+            "data": "24/06/2015",
+            "quintity": 12
+        },
+        {
+            "artisanId": 14,
+            "fullname": "Ofer Dambelldor",
+            "data": "25/06/2015",
+            "quintity": 16
+        },
+        {
+            "artisanId": 15,
+            "fullname": "Yahav Dambelldor",
+            "data": "26/06/2015",
+            "quintity": 14
+        },
+        {
+            "artisanId": 16,
+            "fullname": "Yogev Dambelldor",
+            "data": "27/06/2015",
+            "quintity": 13
+        },
+        {
+            "artisanId": 17,
+            "fullname": "Tamir Dambelldor",
+            "data": "28/06/2015",
+            "quintity": 11
+        },
+        {
+            "artisanId": 18,
+            "fullname": "Oren Dambelldor",
+            "data": "29/06/2015",
+            "quintity": 17
+        },
+        {
+            "artisanId": 19,
+            "fullname": "Alex Dambelldor",
+            "data": "30/06/2015",
+            "quintity": 18
+        },
+        {
+            "artisanId": 20,
+            "fullname": "David Dambelldor",
+            "data": "11/06/2015",
+            "quintity": 5
+        },
+        {
+            "artisanId": 21,
+            "fullname": "Moshe Dambelldor",
+            "data": "10/06/2015",
+            "quintity": 7
+        },
+        {
+            "artisanId": 22,
+            "fullname": "Shlomo Dambelldor",
+            "data": "09/06/2015",
+            "quintity": 9
+        },
+        {
+            "artisanId": 23,
+            "fullname": "Beniamin Dambelldor",
+            "data": "08/06/2015",
+            "quintity": 17
+        },
+        {
+            "artisanId": 24,
+            "fullname": "Ido Dambelldor",
+            "data": "07/06/2015",
+            "quintity": 16
+        }
+    ]
+}

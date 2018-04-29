@@ -1,0 +1,147 @@
+{
+    "topic": "My work",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus  PageMaker including versions of Lorem Ipsum.",
+    "picture": "/images/coll/29.jpg",
+    "works": [
+        {
+            "name": "Work 1",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/1.jpg"
+        },
+        {
+            "name": "Work 2",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/2.jpg"
+        },
+        {
+            "name": "Work 3",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/3.jpg"
+        },
+        {
+            "name": "Work 4",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/4.jpg"
+        },
+        {
+            "name": "Work 5",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/5.jpg"
+        },
+        {
+            "name": "Work 6",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/6.jpg"
+        },
+        {
+            "name": "Work 7",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/7.jpg"
+        },
+        {
+            "name": "Work 8",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/8.jpg"
+        },
+        {
+            "name": "Work 9",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/9.jpg"
+        },
+        {
+            "name": "Work 10",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/10.jpg"
+        },
+        {
+            "name": "Work 11",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/11.jpg"
+        },
+        {
+            "name": "Work 12",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/12.jpg"
+        },
+        {
+            "name": "Work 13",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/13.jpg"
+        },
+        {
+            "name": "Work 14",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/14.jpg"
+        },
+        {
+            "name": "Work 15",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/15.jpg"
+        },
+        {
+            "name": "Work 16",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/16.jpg"
+        },
+        {
+            "name": "Work 17",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/17.jpg"
+        },
+        {
+            "name": "Work 18",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/18.jpg"
+        },
+        {
+            "name": "Work 19",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/19.jpg"
+        },
+        {
+            "name": "Work 20",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/20.jpg"
+        },
+        {
+            "name": "Work 21",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/21.jpg"
+        },
+        {
+            "name": "Work 22",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/22.jpg"
+        },
+        {
+            "name": "Work 23",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/23.jpg"
+        },
+        {
+            "name": "Work 24",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/24.jpg"
+        },
+        {
+            "name": "Work 25",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/25.jpg"
+        },
+        {
+            "name": "Work 26",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/26.jpg"
+        },
+        {
+            "name": "Work 27",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/27.jpg"
+        },
+        {
+            "name": "Work 28",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/gallary/28.jpg"
+        }
+    ]
+}

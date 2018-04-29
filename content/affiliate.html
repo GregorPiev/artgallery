@@ -1,0 +1,22 @@
+<section>
+    <ul class="breadcrumb"><li><a href="../project1/#/">Home</a></li><li><a href="../project1/#/{{topic}}" class="active">{{topic}}</a></li></ul>
+    <h1 class="page-header" ng-bind="topic"></h1>
+    <div class="row">
+        <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+            <span ng-bind-html="content"></span>
+            <div class = "clearfix" > </div>
+
+            <span class="glyphicon glyphicon-search search-icon"></span><input class="search" ng-model="criteria" placeholder="Search">
+            <hr>
+
+            <div class="col-lg-3  col-md-3 col-sm-3 col-xs-12 portfolio-item" ng-repeat="affiliate in affiliates|filter: criteria">
+                <div class="wrapper_img">
+                    <img class=" img-responsive" ng-src="../project1{{affiliate.src}}" alt="{{affiliate.name}}">
+                </div>
+                <h4 class="page-header" ng-bind="affiliate.name"></h4>
+                <span ng-bind-html="affiliate.msg"></span>
+            </div>
+
+        </div>
+    </div>
+</section>

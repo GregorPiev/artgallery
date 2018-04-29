@@ -1,0 +1,81 @@
+{
+    "topic": "Affiliate",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus  PageMaker including versions of Lorem Ipsum.",
+    "affiliates": [
+        {
+            "name": "Affiliate 1",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/29.jpg"
+        },
+        {
+            "name": "Affiliate 2",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/30.jpg"
+        },
+        {
+            "name": "Affiliate 3",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/31.jpg"
+        },
+        {
+            "name": "Affiliate 4",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/32.jpg"
+        },
+        {
+            "name": "Affiliate 5",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/33.jpg"
+        },
+        {
+            "name": "Affiliate 6",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/34.jpg"
+        },
+        {
+            "name": "Affiliate 7",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/35.jpg"
+        },
+        {
+            "name": "Affiliate 8",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/36.jpg"
+        },
+        {
+            "name": "Affiliate 9",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/37.jpg"
+        },
+        {
+            "name": "Affiliate 10",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/38.jpg"
+        },
+        {
+            "name": "Affiliate 11",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/39.jpg"
+        },
+        {
+            "name": "Affiliate 12",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/40.jpg"
+        },
+        {
+            "name": "Affiliate 13",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/41.jpg"
+        },
+        {
+            "name": "Affiliate 14",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/42.jpg"
+        },
+        {
+            "name": "Affiliate 15",
+            "msg": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "src": "/images/coll/43.jpg"
+        }
+    ]
+}

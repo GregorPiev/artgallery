@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="applArt">
+    <head>
+        <title>ArtGallery-Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Art Gallery, Art, Gallery" />
+        <meta name="Keywords" content="Art Gallery, Art, Gallery" />
+
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css" type="text/css">
+        <script src="css/bootstrap/js/bootstrap.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,800italic,400,600,800" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="lib/select2/select2.css" type="text/css" />
+        <link rel="stylesheet" href="lib/fullcalendar/fullcalendar.css" type="text/css" />
+        <link rel="stylesheet" href="lib/tabletools/css/TableTools.css" type="text/css" />
+        <link rel="stylesheet" href="lib/datatables/dataTables.bootstrap.css" type="text/css" />
+        <link href="lib/datatables/jquery.dataTables.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container"  ng-controller="topParrent">
+            <div class="row">
+
+                <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ng-include src ="'partials/header.html'"></ng-include>
+                    <ng-include src="'partials/menu.html'"></ng-include>
+                    <div id="slider-block"  ui-view='slider'></div>
+                    <div class="clearfix"></div>
+                </header>
+                <main class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="wrapper-content" ui-view='content'></div>
+                    <ng-include src="'partials/sign.html'"></ng-include>
+                </main>
+                <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ng-include src = "'partials/footer.html'" > </ng-include>
+                </footer>
+
+            </div>
+        </div>
+        <script src="lib/angular/1.4.4/angular.min.js"></script>
+        <script src="lib/angular/angular-route.min.js"></script>
+        <script src="lib/angular/angular-ui-router.js"></script>
+        <script src="lib/angular/sanitize.js"></script>
+        <script src="lib/angular/ng-file-upload.js"></script>
+        <script src ="appl/appl.js" ></script>
+        <script src="appl/config.js"></script>
+        <script src="appl/controllers.js"></script>
+        <script src="appl/service.js"></script>
+        <script src="lib/jquery/jquery.vticker.js"></script>
+        <script src="lib/select2/select2.js"></script>
+        <script src="lib/datatables/jquery.dataTables.min.js"></script>
+        <script src="lib/tabletools/js/TableTools.min.js"></script>
+    </body>
+</html>

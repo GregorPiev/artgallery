@@ -1,0 +1,53 @@
+<section id="artisanModul">
+    <ul class="breadcrumb"><li><a href="/project1/#/">Home</a></li><li><a href="/project1/#/Artisans" class="active" ng-bind="Artisans"></a></li><li><a href="/project1/#/Artisan_Work" class="active" ng-bind="topic"></a></li></ul>
+    <h1 class="page-header" ng-bind="topic"></h1>
+    <div class="row">
+        <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+            <span class="page-text" ng-bind-html="content"></span>
+            <img class="page-pict img-responsive" ng-src="{{picture.src}}" alt="{{picture.topic}}" title="{{picture.topic}}">
+            <div class = "clearfix" > </div>
+            <hr>
+
+
+            <div class="text-left row">
+                <label class="col-md-2 control-label text-right">Artisans List:</label>
+                <div class="col-md-3">
+                    <select id="artistanList" ng-change="changeArtisan(artistanlist)" ng-model="artistanlist">
+                        <option value="0">Select Artisan</option>
+                        <option ng-repeat="item in artlist" value="{{item.artisanId}}">{{item.fullname}}</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class = "clearfix" > </div>
+            <br>
+            <div class="wrapper-top  col-lg-8 col-md-8 col-sm-8 col-xs-12" >
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover table-highlight"
+                           data-display-rows="10"
+                           data-info="true"
+                           data-search="true"
+                           data-length-change="true"
+                           data-paginate="true"
+                           id="artisansWorksList">
+                    </table>
+                </div>
+            </div>
+            <div class="wrapper-top  col-lg-4 col-md-4 col-sm-4 col-xs-12" >
+                <div id="overAllQuint" class="table-responsive">
+                    <label>Artisans Works Quantity: <span id="artQuint">0</span></label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<ng-include src="'partials/workitem.html'"></ng-include>
+<script>
+    $("#artistanList").select2({
+        placeholder: "Select Artisan",
+        allowClear: true,
+        width: "100%"
+    });
+</script>

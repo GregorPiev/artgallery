@@ -1,0 +1,156 @@
+<iframe style="width: 800px;height:500px;border-width:0px;display:none;" src="php/abstract_form.php" name="control"></iframe>
+<section>
+    <ul class="breadcrumb"><li><a href="../project1/#/">Home</a></li><li><a href="../project1/#/contactus" class="active">{{topic}}</a></li></ul>
+    <h1 class="page-header" ng-bind="topic"></h1>
+    <div class="row">
+        <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+            <span class="page-text" ng-bind-html="content"></span>
+            <img class="page-pict img-responsive" ng-src="../project1/{{picture.src}}" alt="{{picture.topic}}">
+            <div class = "clearfix" > </div>
+
+            <form id="abstract_forms" class="form-horizontal" role="form" action="php/abstract_form.php" method="post" enctype="multipart/form-data" target="control">
+                <input type="hidden" name="start_send" value="1">
+                <div class="form-group col-lg-12">
+                    <label class="control-label col-lg-4" for="lname">First Name  <span class="requare">*</span>:</label>
+                    <div  class="col-lg-6">
+                        <input type="text" name="fname" class="form-control" required="" value="" placeholder="First Name">
+                    </div>
+                </div>
+
+                <div class="form-group col-lg-12">
+                    <label class="control-label col-lg-4" for="lname">Last Name <span class="requare">*</span>:</label>
+                    <div  class="col-lg-6">
+                        <input type="text" name="lname" class="form-control" required="" value="" placeholder="Last Name">
+                    </div>
+                </div>
+
+
+                <div class="form-group col-lg-12">
+                    <label class="control-label col-lg-4" for="affiliation">Institutional affiliation / Professional Affiliations <span class="requare">*</span>:</label>
+                    <div  class="col-lg-6">
+                        <input type="text" name="affiliation" class="form-control" value="" placeholder="Institutional affiliation" required="">
+                    </div>
+                </div>
+
+
+                <div class="form-group col-lg-12">
+                    <label class="control-label col-lg-4" for="lname">Phone number <span class="requare">*</span>:</label>
+                    <div  class="col-lg-6">
+                        <input type="text" name="phone_number" class="form-control" value="" placeholder="Phone number" required="">
+                    </div>
+                </div>
+
+
+                <div class="form-group col-lg-12">
+                    <label class="control-label col-lg-4" for="email">Email <span class="requare">*</span>:</label>
+                    <div  class="col-lg-6">
+                        <input type="text" name="email" class="form-control" value="" placeholder="Email" required="">
+                    </div>
+                </div>
+
+                <div class="form-group col-lg-12">
+                    <div  class="col-lg-4 text-furniture-bold">I would like to present:</div>
+                    <div  class="col-lg-2">
+                        <input type="radio" name="presentation" value="None presentation" checked="checked" ng-model="presentation" ng-checked="true">&nbsp;None presentation
+                    </div>
+                    <div  class="col-lg-3">
+                        <input type="radio" name="presentation" value="Poster presentation"  ng-model="presentation">&nbsp;Poster presentation
+                    </div>
+                    <div  class="col-lg-3">
+                        <input type="radio" name="presentation" value="Oral presentation"  ng-model="presentation">&nbsp;Oral presentation
+                    </div>
+                </div>
+
+
+                <div class="form-group col-lg-12" ng-if="presentation === 'Poster presentation'">
+                    <label class="control-label col-lg-4" for="abstract_target">I would like to submit an abstract for <span class="requare requare_opt">*</span>:</label>
+                    <div  class="col-lg-8">
+                        <input type="text" name="abstract_target" id="abstract_target" class="form-control" value="" placeholder="" ng-required="presentation === 'Poster presentation'">
+                    </div>
+                </div>
+
+
+
+                <div class="form-group col-lg-12"  ng-if="presentation === 'Poster presentation'">
+                    <div  class="col-lg-12 requare">Abstract Details Part B</div>
+                    <label class="control-label col-lg-4" for="abstract_title">Abstract Title <span class="requare requare_opt">*</span>:</label>
+                    <div  class="col-lg-8">
+                        <input type="text" name="abstract_title" class="form-control" value="" placeholder="Abstract Title"  ng-required="presentation === 'Poster presentation'">
+                    </div>
+                </div>
+
+
+                <div class="form-group col-lg-12"  ng-if="presentation === 'Poster presentation'">
+                    <label class="control-label col-lg-4" for="author">Author/s <span class="requare requare_opt">*</span>:</label>
+                    <div  class="col-lg-12">Fill Last name + the first letter of first name. Example: Gelman F. (1), Halicz L. (1) Major T. D.</div>
+                    <div  class="col-lg-8 col-lg-offset-4">
+                        <input type="text" name="author" class="form-control" value="" placeholder="Author/s"  ng-required="presentation === 'Poster presentation'">
+                    </div>
+                </div>
+
+
+
+                <div class="form-group col-lg-12"  ng-if="presentation === 'Poster presentation'">
+                    <label class="control-label col-lg-12" for="affiliations" style="text-align:left;">Institutional affiliations / Professional Affiliations <span class="requare">*</span>:</label>
+                    <div  class="col-lg-12">Type Institutional affiliation / Professional Affiliations address (City, Country) Example: 1. Geological Survey of Israel, 30 Malkhe St. Jerusalem 95501 Israel)</div>
+                    <div  class="col-lg-8 col-lg-offset-4">
+                        <input type="text" name="affiliations2" class="form-control" value="" placeholder=""  ng-required="presentation === 'Poster presentation'">
+                    </div>
+                </div>
+
+                <div class="form-group col-lg-12" ng-if="presentation === 'Poster presentation'">
+                    <label class="control-label col-lg-12" for="abstract_body" style="text-align:left;">Abstract Body <span class="requare requare_opt">*</span>:</label>
+                    <div  class="col-lg-12">450 words Maximum</div>
+                    <div  class="col-lg-12">
+                        <textarea class="form-control" name="abstract_body" cols="3"  ng-required="presentation === 'Poster presentation'"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group col-lg-12" ng-if="presentation === 'Poster presentation'">
+                    <label class="control-label col-lg-12" for="images_abstracted" style="text-align:left;">IUpload Chart / Images Abstract</label>
+                    <div  class="col-lg-12">It is not possible to upload Chart / Images Abstract via "Google Form" If it is necessary – attach images file (only jpg. format -2 files maximum) and submit by email to: crouvi@gsi.gov.il
+                        To associate between images and abstract please use the same title by the mail Subject.
+                    </div>
+                    <div  class="col-lg-8">
+                        <input type="file" name="images_abstracted" id="images_abstracted" ng-required="presentation === 'Poster presentation'">
+                    </div>
+                </div>
+
+                <div class="form-group col-lg-12" ng-if="presentation === 'Oral presentation'">
+                    <label class="control-label col-lg-12" for="editor_comments" style="text-align:left;">Comments for the editor</label>
+                    <div  class="col-lg-12">450 words Maximum</div>
+                    <div  class="col-lg-12">
+                        <textarea class="form-control" name="editor_comments" cols="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group col-lg-6 text-center">
+                    <div id="msg-send"></div>
+                </div>
+
+                <div class="form-group col-lg-6 text-right">
+                    <img id="loading" src="images/loading.gif" alt="" style="display:none;">
+                    <input type="submit" value="Send" class="btn btn-primary" onclick="$('#loading').show();
+                            return true;
+                            $('#loading').delay(5000, function () {
+                                $('#loading').hide();
+                            });">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    function post_message(msg) {
+        $('#loading').hide();
+        $("#msg-send").html(msg);
+        $("#msg-send").show('fast');
+        document.getElementById("abstract_forms").reset();
+        window.setTimeout(function () {
+            $("#msg-send").hide('slow');
+            $("#msg-send").html('');
+        }, 10000);
+    }
+</script>
